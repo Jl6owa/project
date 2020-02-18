@@ -1,0 +1,838 @@
+<style type="text/css" media="screen">
+  
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap');
+
+body
+{
+
+   margin: auto;
+    font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: white;
+    
+
+    max-width: 960px;
+
+
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    //position: relative;
+    background-color: #455A64;
+    height: 70px;
+    border-radius: 15px 15px 0px 0px;
+    border-style: none;
+    align-items: center;
+
+} 
+.logo
+{
+    text-align: center;
+    max-width: 420px;
+    margin-left: 45px;
+    float: left;
+    
+}
+
+  
+
+.block { 
+    float: left;
+
+    width: 140px;
+     height: 480px;
+    background-color: RGB(150,20, 20);
+     border-radius: 15px 15px 15px 15px;
+    color: white;
+       
+   } 
+
+
+.blockstext
+{
+    padding: 2px;
+    font-size: 40px;
+}
+
+.blocksT
+{
+    padding: 2px;
+    font-size: 20px;
+    //color: rgba(0,0,0,0);
+}
+
+
+.block:hover 
+{
+     
+    transition: 0.3s;
+
+    
+    background-image: url("/storage/src/black.png") !important; 
+}
+
+
+
+
+
+
+.content {
+  border-radius: 0px 0px 15px 15px;
+background-color: #607D8B;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+}
+
+.blocks
+{
+
+
+
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.mainimage
+{
+    max-width:100%;
+    max-height:100%;
+    height: 450px;
+    background-image: url("/storage/src/bg.jpeg");
+    background-size: cover;
+    border-radius: 15px 15px 15px 15px;
+    color: black;
+}
+
+.paneloverimage
+{
+    display:flex;
+    margin:0 auto;
+    border-color: green;
+    height: 100%;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    background-color: rgba(89, 155, 179,0.5);
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+.divResultItem
+{
+
+    margin: 5px;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+}
+
+
+
+.loginB {
+
+    background-color:#FFFFFF;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#212121;
+    font-size:14px;
+    font-weight:lighter;
+    padding:13px 32px;
+    text-decoration:none;
+}
+.loginB:hover {
+    background-color:#408c99;
+}
+.loginB:active {
+
+    top:1px;
+}
+
+.rightsidebuttons
+{
+ display: flex;
+ margin-right: 45px;
+ justify-content:space-around;
+ float: right;
+ width: 300px;
+
+}
+
+.addb {
+    background-color:#FFC107;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:lighter;
+    padding:13px 32px;
+    text-decoration:none;
+
+}
+.addb:hover {
+    background-color:#fb9e25;
+}
+.addb:active {
+    top:1px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.userbutton {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  background-color: #447f94;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius:8px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius:8px;
+}
+
+.dropdown-content a:hover {background-color: #346475;}
+
+.userbutton:hover .dropdown-content {display: block;}
+
+
+
+
+.ptitle
+{
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.pstreet
+{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pdescrip
+{
+      font-size: 16px;
+    font-weight: 300;
+  text-align: left;
+  margin-left: 8px;
+  
+}
+
+
+
+.divadtext
+{
+    margin: 0;
+    height: 100px;
+    color: #212121;
+}
+
+
+
+
+
+.divad
+{
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
+    border-radius: 5px 5px 5px 5px;
+    background-color:#CFD8DC;
+    font-size: 12px;
+    
+}
+.divad:hover
+{
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    margin: -2px;
+    transition: 0.2s;
+}
+
+.divadImage
+{
+width: 200px;
+height: 150px;
+border-radius: 5px 5px 0px 0px;
+object-fit:cover;
+
+}
+.resblocks
+{
+  display: grid;
+  width: 100%;
+  grid-column-gap: 35px;
+  grid-row-gap: 15px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  color: white;
+}
+
+
+  .searchpanel
+  {
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+;
+    background-color: rgba(255,255,255,1);
+
+      justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    color: black;
+
+  } 
+  .searchlabels
+  {
+
+    height: 20px;
+
+
+      display: grid;
+
+  width: 100%;
+  grid-column-gap: 15px;
+  font-weight: 300;
+
+  grid-template-columns: repeat(5, 1fr);
+  }
+  .searchcontent
+  {
+
+
+    height: 30px;
+      display: grid;
+
+  width: 100%;
+  grid-column-gap: 15px;
+
+  grid-template-columns: repeat(5, 1fr);
+  }
+
+
+p
+{
+    margin: 0;
+}
+
+select
+{
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+}
+
+.mainimageText
+{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#FFC107;
+    border-radius:8px;
+
+    cursor:pointer;
+    color:#ffffff;
+    font-size:48px;
+    margin: 10px;
+    padding:13px 32px;
+    text-decoration:none;
+    border-style: none;
+}
+
+.mainimageText:hover {
+    background-color:#fb9e25;
+}
+
+.mainimageTextpicture
+{
+ 
+transform:scale(0.7,0.7);
+text-align: center;
+}
+
+
+input[type="date"] {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  outline: none;
+}
+
+    .actionsdiv
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 35px;
+        grid-row-gap: 15px;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    .elementdiv
+    {
+        background-color: black;
+
+        width: 250px;
+        height: 250px;
+    }
+
+
+.rightcolumn
+{
+    width: 30%;
+    height: auto;
+    float: right;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    
+    text-align: center;
+}
+.leftcolumn
+{
+    width: 65%;
+    float: left;
+    align-items: center;
+        background-color: white;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+}
+.adid
+{
+    visibility: hidden;
+}
+.pprice
+{
+    font-size: 20px;
+}
+.amenities_grid
+{
+margin: auto;
+text-align: left;
+display: grid;
+width: 50%;
+grid-column-gap: 35px;
+grid-row-gap: 15px;
+grid-template-columns: repeat(2, 1fr);
+padding: 10px;
+}
+.cityheader
+{
+font-size: 48px;
+text-transform: capitalize;
+position: relative;
+z-index: 1;
+}
+.divadimage
+{
+    object-fit: cover;
+    max-width: 600px;
+    max-height: 350px;
+}
+.bookingelement
+{
+display: flex;
+background-color: rgba(125,152,170,1);
+align-items: center;
+flex-direction: row;
+border-radius: 18px;
+color: black;
+margin: 4px;
+}
+.bookingelementtext
+{
+float: left;
+width: 65%;
+margin: 12px;
+text-align: left;
+}
+.bookingelementbutton
+{
+float: right;
+margin: 12px;
+width: 30%;
+}
+
+
+.dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.col-25 {
+float: left;
+width: 25%;
+margin-top: 6px;
+}
+.col-75 {
+float: left;
+width: 75%;
+margin-top: 6px;
+}
+.row :after{
+content: "";
+display: table;
+clear: both;
+}
+.divadtext
+{
+margin: 0;
+height: 100px;
+}
+.ptitle{
+margin: 2px;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+font-weight: 300;
+height: 30px;
+}
+.pstreet{
+margin: 2px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+width: 196px;
+font-size: 18px;
+font-weight: 500;
+height: 30px;
+}
+.pprice{
+margin: 2px;
+float: right;
+font-weight: 300;
+font-size: 20px;
+max-height: 30px;
+}
+.divad
+{
+display: flex;
+width: 100%;
+max-width: 200px;
+height: 250px;
+border-radius: 5px 5px 5px 5px;
+background-color:rgba(255, 167, 38,1.0);
+font-size: 12px;
+
+}
+.divad:hover
+{
+border-style: solid;
+border-color: white;
+border-width: 2px;
+margin: -2px;
+transition: 0.2s;
+}
+.divadImage
+{
+width: 200px;
+height: 150px;
+border-radius: 5px 5px 0px 0px;
+object-fit:cover;
+}
+.divad:hover .adactions {
+opacity: 1;
+transition: 0.2s;
+}
+.resblocks
+{
+display: grid;
+width: 100%;
+grid-column-gap: 35px;
+grid-row-gap: 15px;
+grid-template-columns: repeat(4, 1fr);
+padding: 10px;
+color: white;
+}
+.resultsTitle
+{
+}
+label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+}
+.profileEdit
+{
+margin: auto;
+text-align: left;
+display: grid;
+width: 50%;
+grid-column-gap: 35px;
+grid-row-gap: 25px;
+grid-template-columns: repeat(2, 1fr);
+grid-row-gap: 1em;
+padding: 10px;
+font-size: 16px;
+}
+.alert
+{
+height: 20px;
+background-color: red;
+}
+.tabsblock
+{
+
+
+}
+.tabbutton
+{
+background-color:#599bb3;
+border-radius:8px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:14px;
+font-weight:lighter;
+padding:13px 32px;
+text-decoration:none;
+border-style: none;
+}
+.tabbutton:hover {
+background-color:#408c99;
+}
+.tabbutton:focus{background-color:#408c99}
+p
+{
+margin: 0;
+}
+.inputedit
+{
+border-style: none;
+padding: 2px;
+border-radius: 8px;
+}
+h2
+{
+text-align: center;
+}
+h1
+{
+margin: 20px;
+}
+.avatarimg
+{
+height: 30px;
+width: 30px;
+}
+.adactions
+{
+display: grid;
+position: absolute;
+opacity: 0;
+width: 200px;
+grid-template-columns: repeat(2, 1fr);
+}
+.deleteB {
+background-color:rgb(255, 80, 80,1.0);
+border-radius:8px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:14px;
+font-weight:lighter;
+padding:13px 32px;
+text-decoration:none;
+}
+.deleteB:hover {
+background-color:#ff3333;
+}
+.deleteB:active {
+top:1px;
+}
+
+
+.rightcolumn
+{
+  width: 30%;
+  height: auto;
+  float: right;
+  background-color: white;
+  color: black;
+  border-radius: 25px;  
+  text-align: center;
+}
+.leftcolumn
+{
+  width: 65%;
+  float: left;
+  align-items: center;
+    background-color: white;
+  color: black;
+  border-radius: 25px;
+  text-align: center;
+}
+.adid
+{
+  visibility: hidden;
+}
+.pprice
+{
+  font-size: 20px;
+}
+.amenities_grid
+{
+margin: auto;
+text-align: left;
+display: grid;
+width: 50%;
+grid-column-gap: 35px;
+grid-row-gap: 15px;
+grid-template-columns: repeat(2, 1fr);;
+padding: 10px;
+}
+.cityheader
+{
+font-size: 48px;
+text-transform: capitalize;
+position: relative;
+z-index: 1;
+}
+.divadimage
+{
+  object-fit: cover;
+  max-width: 600px;
+  max-height: 350px;
+}
+.bookingelement
+{
+display: flex;
+background-color: rgba(125,152,170,1);
+align-items: center;
+flex-direction: row;
+border-radius: 18px;
+color: black;
+margin: 4px;
+}
+.bookingelementtext
+{
+float: left;
+width: 65%;
+margin: 12px;
+text-align: left;
+}
+.bookingelementbutton
+{
+float: right;
+margin: 12px;
+width: 30%;
+}
+p input {
+
+border-style: none;
+display: inline;
+font-family: inherit;
+font-size: inherit;
+font-weight: inherit;
+padding: none;
+text-align: center;
+margin: 0;
+
+}
+p textarea {
+
+border-style: none;
+display: inline;
+font-family: inherit;
+font-size: inherit;
+font-weight: 300;
+padding: none;
+margin: 0;
+
+}
+
+
+    .loginpanel
+    {
+        display: grid;
+        grid-template-rows: auto,auto;
+        margin: auto;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    p input {
+  
+  border-style: none;
+  display: inline;
+
+  font-family: inherit;
+  font-size: 16px;
+  height: 40px;
+  font-weight: inherit;
+  padding: none;
+  text-align: center;
+  margin: 0;
+  
+}
+
+label
+{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+</style>

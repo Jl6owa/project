@@ -1,0 +1,875 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap');
+
+body
+{
+
+   margin: auto;
+    font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: white;
+
+    
+
+    max-width: 960px;
+
+
+}
+
+.dark-primary-color    { background: #455A64; }
+.default-primary-color { background: #607D8B; }
+.light-primary-color   { background: #CFD8DC; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FFC107; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #CFD8DC;
+    height: 70px;
+    border-radius: 15px 15px 0px 0px;
+    border-style: none;
+    align-items: center;
+    box-shadow: 0px 3px 5px -3px rgba(255,255,255,0.74);
+
+} 
+.logo
+{
+    text-align: center;
+    max-width: 420px;
+    margin-left: 45px;
+    float: left;
+    
+}
+
+  
+
+.block { 
+    float: left;
+    flex:1;
+    width: 140px;
+   height: 480px;
+    background-color: RGB(150,20, 20);
+     border-radius: 15px 15px 15px 15px;
+    color: white;
+
+       
+   } 
+
+
+.blockstext
+{
+    padding: 2px;
+    font-size: 40px;
+}
+
+.blocksT
+{
+    padding: 2px;
+    font-size: 20px;
+    //color: rgba(0,0,0,0);
+}
+
+
+.block:hover 
+{
+     
+    transition: 0.3s;
+
+    
+    background-image: url("/storage/src/black.png") !important; 
+}
+
+
+
+
+
+
+.content {
+  border-radius: 0px 0px 15px 15px;
+background-color: #CFD8DC;
+
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+}
+
+
+
+.pricesleep
+{
+  background-color: #607D8B;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  justify-content:space-around;
+  border-radius: 0px 0px 5px 5px; 
+
+}
+
+.blocks
+{
+
+
+
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+
+    
+}
+
+.mainimage
+{
+    display: flex;
+    height: 450px;
+    width: 100%;
+    background-image: url("/storage/src/bg.jpeg");
+    background-size: cover;
+    border-radius: 15px 15px 15px 15px;
+    color: black;
+    justify-content:center;
+}
+
+.paneloverimage
+{
+    
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+.divResultItem
+{
+
+    margin: 5px;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+}
+
+
+
+.loginB {
+
+    background-color:#607D8B;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#212121;
+    font-size:14px;
+    color: white;
+    padding:12px 20px;
+    text-decoration:none;
+    border-style: none;
+
+}
+.loginB:hover {
+    background-color:#455A64;
+}
+.loginB:active {
+
+    top:1px;
+}
+
+.rightsidebuttons
+{
+ display: flex;
+ margin-right: 45px;
+ justify-content:space-around;
+ float: right;
+ width: 300px;
+
+}
+
+.addb {
+    background-color:#FFC107;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:lighter;
+    padding:12px 20px;
+    text-decoration:none;
+
+
+}
+
+[type=file] {
+    position: absolute;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.addb:hover {
+    background-color:#ecb613;
+}
+.addb:active {
+    top:1px;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+.userbutton {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  background-color: #447f94;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius:8px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius:8px;
+}
+
+.dropdown-content a:hover {background-color: #346475;}
+
+.userbutton:hover .dropdown-content {display: block;}
+
+
+
+
+.ptitle
+{
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.pstreet
+{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pdescrip
+{
+      font-size: 16px;
+    font-weight: 300;
+  text-align: left;
+  margin: 10px;
+  text-indent: 25px;
+  
+}
+
+
+
+.divadtext
+{
+    margin: 0;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+.divad
+{
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+    border-radius: 5px 5px 5px 5px;
+    background-color:#455A64;
+    font-size: 12px;
+
+}
+.divad:hover
+{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    margin: -1px;
+    transition: 0.2s;
+}
+
+.divad:hover .adactions {
+opacity: 1;
+transition: 0.2s;
+}
+
+.divadimage
+{
+width: 200px;
+height: 175px;
+border-radius: 5px 5px 0px 0px;
+object-fit:cover;
+
+}
+
+
+
+  .searchpanel
+  {
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    background-color: #CFD8DC;
+
+      justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    color: black;
+
+  } 
+  .searchlabels
+  {
+
+    height: 40px;
+
+
+      display: grid;
+
+  width: 100%;
+  grid-column-gap: 15px;
+  font-weight: 300;
+
+  grid-template-columns: repeat(5, 1fr);
+  }
+  .searchcontent
+  {
+
+
+    height: 30px;
+      display: grid;
+
+  width: 100%;
+  grid-column-gap: 15px;
+
+  grid-template-columns: repeat(5, 1fr);
+  }
+
+
+
+
+select
+{
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+}
+
+
+.searchbuttonP
+{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainimageText
+{
+ 
+    
+
+    background-color:#FFC107;
+    border-radius:8px;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:48px;
+    margin: 10px;
+    padding:12px 20px;
+    text-decoration:none;
+    border-style: none;
+}
+
+.mainimageText:hover {
+    background-color:#ecb613;
+}
+
+.mainimageTextpicture
+{
+ 
+transform:scale(0.7,0.7);
+text-align: center;
+}
+
+
+input[type="date"] {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  outline: none;
+
+}
+
+    .actionsdiv
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 35px;
+        grid-row-gap: 15px;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        vertical-align: center;
+    }
+
+
+
+.rightcolumn
+{
+    width: 30%;
+  
+    float: right;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    height: min-content;
+    text-align: center;
+}
+.leftcolumn
+{
+    width: 65%;
+    float: left;
+    align-items: center;
+        background-color: white;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+
+}
+.adid
+{
+    visibility: hidden;
+}
+
+
+
+.adimage
+{
+  width: 600px;
+  height: 350px;
+  object-fit:scale-down;
+}
+
+
+.cityheader
+{
+font-size: 48px;
+text-transform: capitalize;
+position: relative;
+z-index: 1;
+}
+
+.bookingelement
+{
+display: flex;
+background-color: rgba(125,152,170,1);
+align-items: center;
+flex-direction: row;
+border-radius: 18px;
+color: black;
+margin: 4px;
+}
+
+
+.elementdiv
+{
+  display: flex;
+
+align-items: center;
+}
+
+
+.bookingelement:hover .bookingelementbutton
+{
+  opacity: 1;
+}
+
+.bookingelement:hover .bookingelementtext
+{
+  width: 65%;
+}
+
+.bookingelementtext
+{
+float: left;
+width: 100%;
+margin: 12px;
+text-align: left;
+}
+
+.bookingelementbutton
+{
+float: right;
+opacity: 0;
+margin: 12px;
+width: 30%;
+}
+
+
+.dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.col-25 {
+float: left;
+width: 25%;
+margin-top: 6px;
+}
+.col-75 {
+float: left;
+width: 75%;
+margin-top: 6px;
+}
+.row :after{
+content: "";
+display: table;
+clear: both;
+}
+
+.titleClamp{
+margin: 2px;
+font-size: 14px;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+font-weight: 300;
+height: 35px;
+}
+.streetClamp{
+margin: 2px;
+
+overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+width: 196px;
+font-size:16px;
+font-weight: 500;
+height: 50px;
+}
+.miniprice{
+margin: 2px;
+float: right;
+font-weight: 300;
+font-size: 20px;
+max-height: 50px;
+}
+
+
+
+
+.loadpicture
+{
+display: flex;
+
+align-items: center;
+text-align: center;
+justify-content: space-around;
+
+}
+
+.loadpicture:hover,
+{
+  border-color: rgba(0,0,0,0.2);
+  border-style: solid;
+  border-width: 1px;
+  margin: -1px;
+
+}
+
+.loadpicture:hover .addpicture
+{
+opacity: 1;
+}
+
+
+.addpicture
+{
+display: flex;
+position: absolute;
+left: 50%;
+top: 50%;
+justify-content: space-around;
+
+opacity: 0;
+}
+
+.errorblock
+{
+
+
+  border-radius: 20px;
+  margin: 20px;
+
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+
+  color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.successblock
+{
+
+  border-radius: 20px;
+  margin: 20px;
+
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+
+      color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+
+
+.resblocks
+{
+display: grid;
+width: 100%;
+grid-column-gap: 35px;
+grid-row-gap: 15px;
+grid-template-columns: repeat(4, 1fr);
+padding: 10px;
+color: white;
+}
+.resultsTitle
+{
+}
+label {
+padding: 5px 5px 5px 0px;
+display: inline-block;
+font-size: 18px;
+}
+.profileEdit
+{
+margin: auto;
+text-align: left;
+display: grid;
+width: 50%;
+grid-column-gap: 35px;
+grid-row-gap: 25px;
+grid-template-columns: repeat(2, 1fr);
+grid-row-gap: 1em;
+padding: 10px;
+font-size: 16px;
+}
+.alert
+{
+height: 20px;
+background-color: red;
+}
+
+
+
+
+.inputedit
+{
+border-style: none;
+padding: 2px;
+border-radius: 8px;
+}
+
+h2
+{
+text-align: center;
+}
+
+h1
+{
+margin: 20px;
+}
+
+.avatarimg
+{
+height: 30px;
+width: 30px;
+}
+
+.adactions
+{
+display: flex;
+position: absolute;
+justify-content: space-around;
+width: 200px;
+opacity: 0;
+}
+
+.deleteB {
+background-color:rgb(255, 80, 80,1.0);
+border-radius:8px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:14px;
+font-weight:lighter;
+padding:12px 20px;
+text-decoration:none;
+border-style: none;
+}
+
+.deleteB:hover {
+background-color:#ff3333;
+}
+
+.deleteB:active {
+top:1px;
+}
+
+
+
+
+.adid
+{
+  visibility: hidden;
+}
+.pprice
+{
+  font-size: 20px;
+}
+.amenities_grid
+{
+margin: auto;
+text-align: left;
+display: grid;
+width: 75%;
+grid-column-gap: 35px;
+grid-row-gap: 5px;
+grid-template-columns: repeat(2, 1fr);;
+padding: 10px;
+}
+.cityheader
+{
+font-size: 48px;
+text-transform: capitalize;
+position: relative;
+z-index: 1;
+}
+
+
+.bookingelement
+{
+display: flex;
+background-color: #afb7ba;
+align-items: center;
+flex-direction: row;
+border-radius: 18px;
+color: white;
+margin: 4px;
+}
+.bookingelementtext
+{
+float: left;
+width: 70%;
+margin: 12px;
+text-align: left;
+}
+.bookingelementbutton
+{
+float: right;
+margin: 12px;
+width: 30%;
+}
+p input {
+
+border-style: none;
+border-radius: 10px;
+display: inline;
+font-family: inherit;
+font-size: inherit;
+font-weight: inherit;
+padding: 10px;
+text-align: center;
+margin: 0;
+
+}
+p textarea {
+
+border-style: none;
+display: inline;
+font-family: inherit;
+font-size: inherit;
+font-weight: 300;
+padding: none;
+margin: 0;
+
+}
+
+
+    .loginpanel
+    {
+        display: grid;
+        grid-template-rows: auto,auto;
+        margin: auto;
+        text-align: left;
+        font-size: 16px;
+    }
+
+
+
+
+
+
